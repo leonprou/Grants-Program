@@ -3,7 +3,7 @@
 
 - **Project Name:** Address Book
 - **Team Name:** Leon Prouger
-- **Payment Address:** Polymesh (POLYX) payment address. Please also specify the currency.  
+- **Payment Address:**
 - **Level:** 1
 
 ## Project Overview :page_facing_up:
@@ -15,8 +15,6 @@ The project introduces an address book to the Polymesh portal, allowing users to
 ### Project Details
 
 #### Address Book Page
-Opening the address book page the user views  table of entities with the fiels: name tag, DID, address (or list of them), text note (maybe). The user can search add, remore or edit items. The entities are stored in the local storage. The user can also import and export the address book to CSV or JSON.
-
 
 When accessing the address book page, user is presented with a table displaying address book entities with fields such as name tag, DID, and address (or a list of them). The available actions include adding, removing, or editing items within the address book. Users can conveniently search the address book, and there are options for exporting and importing items to and from CSV
 
@@ -102,41 +100,24 @@ For each milestone,
 
 ### Milestone 1 Example — Implement Substrate Modules
 
-- **Estimated duration:** 1 month
-- **FTE:**  2
-- **Costs:** 8,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | Feature: X | We will create a feature that will... (Please list the functionality that will be implemented for the first milestone) |  
-| 2. | Feature: Y | We will create a feature that will... |  
-
+- **Estimated duration:**
+- **FTE:**
+- **Costs:**
 
 ### Milestone 2 Example — Additional features
 
-- **Estimated Duration:** 1 month
-- **FTE:**  1
-- **Costs:** 4,000 USD
+- **Estimated Duration:**
+- **FTE:**
+- **Costs:**
 
 ...
 
 
 ## Future Plans
 
-Please include here
-
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
-
-
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Polymesh Website / Medium / Twitter / Discord / Newsletter / Announcement by another team / personal recommendation / etc.
+**How did you hear about the Grants Program?** personal recommendation.
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
