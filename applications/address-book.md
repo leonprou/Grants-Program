@@ -82,13 +82,13 @@ PoC version was developed, in the PoC hard coded data is used.
 
 - **Total Estimated Duration:** 1 month
 - **Full-Time Equivalent (FTE):** 0.56
-- **Total Costs:** 7.5K USD
+- **Total Costs:** 7,500 USD
 
 ### Milestone 1 — Implement Address Book
 
 - **Estimated duration:** 1 month
 - **FTE:** 0.55
-- **Costs:** 7.5K USD
+- **Costs:** 7,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -99,7 +99,7 @@ PoC version was developed, in the PoC hard coded data is used.
 | 2. | Feature: Import and Export | Importing and exporing entity book data.
 | 2. | Feature: Import and Export | Importing and exporting to a CSV file.
 | 3. | Feature: Name tag display | Displaying the name tag in addition to the DID.
-
+| 4. | Support | Feature support and bug fixing during Q1 of 2024.
 
 ## Future Plans
 
