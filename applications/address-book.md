@@ -74,7 +74,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-I have a PoC version that presents address book with a mock data.
+PoC version was developed, in the PoC hard coded data is used.
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -87,7 +87,7 @@ I have a PoC version that presents address book with a mock data.
 ### Milestone 1 — Implement Address Book
 
 - **Estimated duration:** 1 month
-- **FTE:** 0.56
+- **FTE:** 0.55
 - **Costs:** 7.5K USD
 
 | Number | Deliverable | Specification |
@@ -99,7 +99,6 @@ I have a PoC version that presents address book with a mock data.
 | 2. | Feature: Import and Export | Importing and exporing entity book data.
 | 2. | Feature: Import and Export | Importing and exporting to a CSV file.
 | 3. | Feature: Name tag display | Displaying the name tag in addition to the DID.
-...
 
 
 ## Future Plans
