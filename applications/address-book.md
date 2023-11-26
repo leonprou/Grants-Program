@@ -10,21 +10,26 @@
 
 ### Overview
 
-The project introduces an address book to the Polymesh portal, allowing users to assign name tags to common contracts using either DID or address. This addition aims to enhance the overall user experience of the portal, making it easy to perform and oversee transactions with the help of the address book.
+The project introduces an address book to the Polymesh portal, allowing users to assign name tags to DID and its the associated keys. This addition aims to enhance the overall user experience of the portal, making it easy to perform and oversee transactions with the help of the address book.
 
 ### Project Details
 
 #### Address Book Page
 
-When accessing the address book page, user is presented with a table displaying address book entities with fields such as name tag, DID, and address (or a list of them). The available actions include adding, removing, or editing items within the address book. Users can conveniently search the address book, and there are options for exporting and importing items to and from CSV
+When accessing the address book page, user is presented with a table displaying address book entities with fields such as name tag, DID, and key (primary). The available actions include adding, removing, or editing items within the address book. Users can conveniently search the address book, and there are options for exporting and importing items to and from CSV
 
 The address book entities are stored in local storage, making it accessible within the user's browser environment only.
 
 ![Examplle mock](image.png)
 
+
+#### Address Entity popup
+
+The address entity popup appears whenever a user intends to add, edit, or simply view an address book entity. Also it includes a dedicated field for textual notes. Additionally, when a DID is inputted, the associated account keys are automatically retrieved presented to the user.
+
 #### Name tag funcionality
 
-The name tag will be displayed alongside the user's DID or address on all portal screens. Additionally, when performing transfers and other actions, users can select a recipient by the name tag, while the associated DID is automatically fetched in the background.
+The name tag will be displayed alongside the user's DID on all portal screens. Additionally, when performing transfers and other actions, users can select a recipient by the name tag, while the associated DID is automatically fetched in the background. Displaying the user tag instead of keys associated with the DID can also be done if it heplful.
 
 ![Mock](image-1.png)
 
@@ -37,9 +42,6 @@ Address book enhace the user experience of the polymesh portal.
 ## Team :busts_in_silhouette:
 
 ### Team members
-
-- Name of team leader
-- Names of team members
 
 ### Contact
 
@@ -76,51 +78,40 @@ I have a PoC version that presents address book with a mock data.
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Polymesh. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month. We also _recommend_ that you build up the scope of the project in a way that it can be completed in max 3 months. If the entirety of your project is going to take more than 3 months, please submit it's parts that can be completed in 3 months as one grant project. This helps us move forward quickly and deliver features quickly.
-
-For each milestone,
-
-- make sure to include a specification of your software. _Treat it as a contract_; the level of detail must be enough to later verify that the software meets the specification.
-- include the amount of funding requested _per milestone_.
-- include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
-- provide a test suite, comprising unit and integration tests, along with a guide on how to set up and run them.
-- commit to providing Dockerfiles for the delivery of your project.
-- indicate milestone duration as well as number of full-time employees working on each milestone.
-- **Deliverables 0a-0d are mandatory for all milestones**, and deliverable 0e at least for the last one. If you do not intend to deliver one of these, please state a reason in its specification (e.g. Milestone X is research oriented and as such there is no code to test).
-
-> :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
-
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; since the grant is paid out in POLYX, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Estimated Duration:** 1 month
+- **Full-Time Equivalent (FTE):** 0.56
+- **Total Costs:** 7.5K USD
 
-### Milestone 1 Example — Implement Substrate Modules
+### Milestone 1 — Implement Address Book
 
-- **Estimated duration:**
-- **FTE:**
-- **Costs:**
+- **Estimated duration:** 1 month
+- **FTE:** 0.56
+- **Costs:** 7.5K USD
 
-### Milestone 2 Example — Additional features
-
-- **Estimated Duration:**
-- **FTE:**
-- **Costs:**
-
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0.a  | Specification | Product and technical specification of the overall feature
+| 0.b | PoC | PoC in a defined scope to prove the feasibility and understand the codebase
+| 1. | Feature: Address book page | Address book page with seach that loads data from local storage.
+| 2. | Feature: Address Entity popup | Address entity pop for adding and ediding entites. Entity includes name tag, DID, account keys that fetched by DID, and optional fields for test notes.
+| 2. | Feature: Import and Export | Importing and exporing entity book data.
+| 2. | Feature: Import and Export | Importing and exporting to a CSV file.
+| 3. | Feature: Name tag display | Displaying the name tag in addition to the DID.
 ...
 
 
 ## Future Plans
 
+In the future the account key functionality in the address book can be improve:
+- dedicated tab for address book entities tagged by key (instead DID)
+- displaying seconday keys that are related to the DID in form of `leon.secondary`
+
+*Note:The suggestions can be included in the proposal as the second milestone.*
+
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** personal recommendation.
 
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+I gained familiarity with the codebase through the execution of a time-bound PoC. This exercise was pivotal in assessing the proposal's feasibility and in comprehending the full extent of the work required
