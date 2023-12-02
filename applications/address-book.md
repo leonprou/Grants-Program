@@ -10,28 +10,48 @@
 
 ### Overview
 
-The project introduces an address book to the Polymesh portal, allowing users to assign name tags to DID and its the associated keys. This addition aims to enhance the overall user experience of the portal, making it easy to perform and oversee transactions with the help of the address book.
+The project introduces an address book to the Polymesh portal, allowing users to assign name tags to DID and keys. This addition aims to enhance the overall user experience of the portal, making it easy to perform and oversee transactions with the help of the address book.
 
 ### Project Details
 
-#### Address Book Page
+### Address Book Page
 
-When accessing the address book page, user is presented with a table displaying address book entities with fields such as name tag, DID, and key (primary). The available actions include adding, removing, or editing items within the address book. Users can conveniently search the address book, and there are options for exporting and importing items to and from CSV
+When accessing the address book page, the user is presented with a table under two tabs, displaying address book entities for DIDs and keys. This table shows an association between each DID/key and the user-defined name tag. Users can add, remove, edit items within the address book (CRUD operations are supported). Users can conveniently search and sort entries, with options to export and import items in CSV format. The address book entities are stored in local the storage, ensuring they are accessible only within the user's browser environment."
 
-The address book entities are stored in local storage, making it accessible within the user's browser environment only.
+The address book will have two entry types - DID and key, displayed in two separated tables.
 
-![Examplle mock](image.png)
+**DID table fields**
+- User assigned name
+- DID with a coppy button
+- primary key address with a link to Polymesh blockchain explorer
+- Actions buttons for edit and remove 
 
+**Keys table fiels**
+- User assigned name
+- Key address with a link to Polymesh Subscan blockchain explorer
+- Label for the key type - unassigned, multisig, multisig signer, smart contract, primary key, secondary key
+- The DID associates with the key with a coppy button
+- Action buttons for edit and remove 
 
-#### Address Entity popup
+**UI specifications**
+- The address book will have a dedicated page that got two table under diffrent tabs - DID and keys
+- The address book modal will be used for adding and editing entities
+- The address book page will integrate with the existing Portal design and style.
+- There will be a dedicated menu/sidebar option for the address book.
+- The address book will be reactive, so it works with both desktop and mobile layouts.
+- The address book will support both Light and Dark themes.
 
-The address entity popup appears whenever a user intends to add, edit, or simply view an address book entity. Also it includes a dedicated field for textual notes. Additionally, when a DID is inputted, the associated account keys are automatically retrieved presented to the user.
+![Example mock](address-book.png)
 
 #### Name tag funcionality
 
-The name tag will be displayed alongside the user's DID on all portal screens. Additionally, when performing transfers and other actions, users can select a recipient by the name tag, while the associated DID is automatically fetched in the background. Displaying the user tag instead of keys associated with the DID can also be done if it heplful.
+Address book entities will be integrated into the existing pages of the portal. Whenever a DID or key is displayed, the corresponding name tag will be shown next to it. Furthermore, when a DID or key is required to be entered, the user can simply use the name tag. A filter dropdown menu will be presented to the user, allowing the selection of the associated key/DID by choosing a name tag. For example:
+- When sending POLYX, it should be possible to select a key from the address book as a destination.
+- When creating a settlement instruction, it should be possible to select a DID from the address book as a destination.
+- When adding authorizations, it shall be possible to select a key or DID, as required, from the address book.
+- When adding claims, it shall be possible to select a key or DID, as required, from the address book.
 
-![Mock](image-1.png)
+![Mock](nametag-example.png)
 
 * *The mocks are for presentation purposes only and do not represent the final version.*
 
@@ -80,32 +100,31 @@ PoC version was developed, in the PoC hard coded data is used.
 
 ### Overview
 
-- **Total Estimated Duration:** 1 month
-- **Full-Time Equivalent (FTE):** 0.56
+- **Total Estimated Duration:** 2 month
+- **Full-Time Equivalent (FTE):** 0.65
 - **Total Costs:** 7,500 USD
 
 ### Milestone 1 — Implement Address Book
 
-- **Estimated duration:** 1 month
-- **FTE:** 0.55
+- **Estimated duration:** 2 month
+- **FTE:** 0.65
 - **Costs:** 7,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0.a  | Specification | Product and technical specification of the overall feature
 | 0.b | PoC | PoC in a defined scope to prove the feasibility and understand the codebase
-| 1. | Feature: Address book page | Address book page with seach that loads data from local storage.
-| 2. | Feature: Address Entity popup | Address entity pop for adding and ediding entites. Entity includes name tag, DID, account keys that fetched by DID, and optional fields for test notes.
-| 2. | Feature: Import and Export | Importing and exporing entity book data.
-| 2. | Feature: Import and Export | Importing and exporting to a CSV file.
+| 1. | Feature: Address book table | Address book table that allows CRUD for address book entities
+| 1. | Feature: Additional table features | Searching and sorting entity records
+| 2. | Feature: Import and Export | Importing and exporing entity book data, CSV support.
 | 3. | Feature: Name tag display | Displaying the name tag in addition to the DID.
 | 4. | Support | Feature support and bug fixing during Q1 of 2024.
 
 ## Future Plans
 
 In the future the account key functionality in the address book can be improve:
-- dedicated tab for address book entities tagged by key (instead DID)
 - displaying seconday keys that are related to the DID in form of `leon.secondary`
+- special handling for adding keys that associated with DID address book entities
 
 *Note:The suggestions can be included in the proposal as the second milestone.*
 
