@@ -18,7 +18,7 @@ The project introduces an address book to the Polymesh portal, allowing users to
 
 When accessing the address book page, the user is presented with a table under two tabs, displaying address book entities for DIDs and keys. This table shows an association between each DID/key and the user-defined name tag. Users can add, remove, edit items within the address book (CRUD operations are supported). Users can conveniently search and sort entries, with options to export and import items in CSV format. The address book entities are stored in local the storage, ensuring they are accessible only within the user's browser environment."
 
-The address book will have two entry types - DID and key, displayed in two separated tables.
+The address book will have two entry types - DID and key, displayed in two separated tables. Each table contains the following fields:
 
 **DID table fields**
 - User assigned name
@@ -43,7 +43,7 @@ The address book will have two entry types - DID and key, displayed in two separ
 
 ![Example mock](address-book.png)
 
-#### Name tag funcionality
+#### Name tag display
 
 Address book entities will be integrated into the existing pages of the portal. Whenever a DID or key is displayed, the corresponding name tag will be shown next to it. Furthermore, when a DID or key is required to be entered, the user can simply use the name tag. A filter dropdown menu will be presented to the user, allowing the selection of the associated key/DID by choosing a name tag. For example:
 - When sending POLYX, it should be possible to select a key from the address book as a destination.
